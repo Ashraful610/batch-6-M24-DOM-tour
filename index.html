@@ -11,8 +11,20 @@
     <h1>Welcome to DOM Tour</h1>
     <h2>Today we all discuss dom </h2>
 
-
+    <ul>
+        <li>Sayeem</li>
+        <li>Nayeem</li>
+        <li>Rahim</li>
+        <li>Fahim</li>
+        <li>Jahim</li>
+    </ul>
 
     <script src="js/main.js"></script>
+    <script>
+        const allLi =  document.getElementsByTagName('li')
+        for(const li of allLi){
+            console.log(li.innerText)
+        }
+    </script>
 </body>
 </html>
