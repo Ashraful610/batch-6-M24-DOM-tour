@@ -13,3 +13,9 @@ for(const motivate of motivations){
 const title = document.getElementById('section-title')
 title.classList.add('color')
 title.classList.remove('more-title')
+
+const firstSection = document.querySelector('.first-section')
+const ul = firstSection.childNodes[3]
+const li = document.createElement('li')
+li.innerText='Hi'
+ul.appendChild(li)
