@@ -8,22 +8,32 @@
     <link rel="stylesheet" href="Style/main.css">
 </head>
 <body>
-    <h1>Welcome to DOM Tour</h1>
-    <h2>Today we all discuss dom </h2>
-
-    <ul>
-        <li>Sayeem</li>
-        <li>Nayeem</li>
-        <li>Rahim</li>
-        <li>Fahim</li>
-        <li>Jahim</li>
-    </ul>
+    <main>
+        <h1>Welcome to DOM Tour</h1>
+        <section>
+            <h2 id="title"> </h2>
+            <ul>
+                <li class="names">Nayeem</li>
+                <li class="names">Sayeem</li>
+                <li class="names">Rahim</li>
+                <li class="names">Fahim</li>
+                <li>Jahim</li>
+            </ul>
+        </section>
+    </main>
 
     <script src="js/main.js"></script>
     <script>
         const allLi =  document.getElementsByTagName('li')
         for(const li of allLi){
-            console.log(li.innerText)
+            // console.log(li.innerText)
+        }
+        const title = document.getElementById('title')
+        title.innerText = 'Today we will discuee , what we can'
+
+        const names = document.getElementsByClassName('names')
+        for(const name of names){
+            console.log(name.innerTextj)
         }
     </script>
 </body>
