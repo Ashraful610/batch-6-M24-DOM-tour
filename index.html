@@ -11,7 +11,7 @@
     <main>
         <h1>Welcome to DOM Tour</h1>
         <section>
-            <h2 id="section-title"> </h2>
+            <h2 id="section-title" class="more-title"> </h2>
             <ul>
                 <li class="names">Nayeem</li>
                 <li class="names">Sayeem</li>
@@ -21,7 +21,7 @@
             </ul>
         </section>
         <section>
-            <h3>Hello every one</h3>
+            <h3 class="second-title">Hello every one</h3>
             <ul class="jela">
                 <li>Dhaka</li>
                 <li>Brahmanbaria</li>
@@ -43,26 +43,26 @@
 
     <script src="js/main.js"></script>
     <script>
-        // const allLi =  document.getElementsByTagName('li')
-        // for(const li of allLi){
-        //     // console.log(li.innerText)
-        // }
-        // const title = document.getElementById('section-title')
-        // title.innerText = 'Today we will discuee , what we can'
+        const allLi =  document.getElementsByTagName('li')
+        for(const li of allLi){
+            // console.log(li.innerText)
+        }
+        const section_title = document.getElementById('section-title')
+       section_title.innerText = 'Today we will discuee , what we can'
 
-        // const names = document.getElementsByClassName('names')
-        // for(const name of names){
-        //     // console.log(name.getAttribute('class'))
-        // }
-        // const discrtics = document.querySelectorAll('.jela li')
-        // for(const name of discrtics){
-        //     name.style.color = 'blue'
-        //     name.style.fontWeight = 'bold'
-        //     // console.log(name.innerText)
-        // }
-        // const oneGela = document.querySelector('.jela li')
-        // oneGela.setAttribute('title', 'Capital of bangladesh')
-        // console.log(oneGela)
+        const names = document.getElementsByClassName('names')
+        for(const name of names){
+            // console.log(name.getAttribute('class'))
+        }
+        const discrtics = document.querySelectorAll('.jela li')
+        for(const name of discrtics){
+            name.style.color = 'blue'
+            name.style.fontWeight = 'bold'
+            // console.log(name.innerText)
+        }
+        const oneGela = document.querySelector('.jela li')
+        oneGela.setAttribute('title', 'Capital of bangladesh')
+        console.log(oneGela)
     </script>
 </body>
 </html>

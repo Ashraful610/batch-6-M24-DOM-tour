@@ -10,3 +10,6 @@ const motivations = document.querySelectorAll('li')
 for(const motivate of motivations){
     motivate.style.color = 'white'
 }
+const title = document.getElementById('section-title')
+title.classList.add('color')
+title.classList.remove('more-title')
