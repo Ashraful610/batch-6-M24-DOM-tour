@@ -42,14 +42,17 @@
 
         const names = document.getElementsByClassName('names')
         for(const name of names){
-            // console.log(name.innerText)
+            console.log(name.getAttribute('class'))
         }
         const discrtics = document.querySelectorAll('.jela li')
         for(const name of discrtics){
+            name.style.color = 'blue'
+            name.style.fontWeight = 'bold'
             // console.log(name.innerText)
         }
         const oneGela = document.querySelector('.jela li')
-        console.log(oneGela)
+        oneGela.setAttribute('title', 'Capital of bangladesh')
+        // console.log(oneGela)
     </script>
 </body>
 </html>
